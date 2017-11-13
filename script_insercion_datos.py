@@ -10,4 +10,7 @@ if opcion1 == '-a':
 	listai = open('/var/cache/bind/db.172.22.200', 'a')
 
 	if tipo == 'dir':
+		listad.write(nombre+'	IN	A	'+dato+'\n')
+		listai.write(dato+'	IN	PTR	'+nombre+'.lopez.gonzalonazareno.org.\n')
+	
 
