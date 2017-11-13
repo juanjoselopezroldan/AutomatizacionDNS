@@ -5,3 +5,5 @@ opcion2=sys.argv[2]
 opcion3=sys.argv[3]
 opcion4=sys.argv[4]
 
+if opcion1 == '-a':
+		directa = open('/var/cache/bind/db.lopez.gonzalonazareno.org')
