@@ -16,6 +16,6 @@ if opcion1 == '-a':
 	listad.close()
 	listai.close()
 elif opcion1 == '-b':
-	os.system("sed -i '/^"+tipo+"*.*$/d' /var/cache/bind/db.lopez.gonzalonazareno.org")
-	os.system("sed -i '/"+tipo+"*.*$/d' /var/cache/bind/db.172.22.200")
+	os.system("sed -i '/^"+tipo+".*$/d' /var/cache/bind/db.lopez.gonzalonazareno.org") 
+	os.system("sed -i '/"+tipo+".*$/d' /var/cache/bind/db.172.22.200")
 os.system('systemctl restart bind9')
