@@ -18,15 +18,19 @@ elif opcion1 == '-b':
 	os.system('sed -i /'+tipo+'/d /var/cache/bind/db.lopez.gonzalonazareno.org')
 	os.system('sed -i /'+tipo+'/d /var/cache/bind/db.172.22.200')
 else:
-	print "Error, los parametros introducidos no son validos por favor siga la siguiente sintaxis: "
-	print "1º -> -a o -b, Si recibe -a añadirá un nuevo nombre en el DNS, si recibe -b borrará el nombre que ha recibido."
-	print "2º -> -dir o -alias, si recibe -dir va a crear un registro tipo A, si recibe -alias va a crear un registro CNAME"
-	print "3º -> El nombre de la máquina para añadir o borrar"
-	print "4º -> El nombre del alias o la dirección ip: Si has usuado la opción -dir recibirá una ip y si has usuado -alias recibirá el nombre de la máquina a la que le vamos a hacer el alias. Si has utilizado -b no teendrá este parámetro"
-	cadena="Ejemplo de sistaxis"
-	print cadena.center(10,"~")
-	print "- Añadir: python script.py -a -dir smtp 172.22.200.200"
-	print "- Eliminar:  python script.py -b smtp"
+        print " "
+        print "Error, los parametros introducidos no son validos por favor siga la siguiente sintaxis: "
+        print " "
+        print "1º -> -a o -b, Si recibe -a añadirá un nuevo nombre en el DNS, si recibe -b borrará el no$
+        print "2º -> -dir o -alias, si recibe -dir va a crear un registro tipo A, si recibe -alias va a $
+        print "3º -> El nombre de la máquina para añadir o borrar"
+        print "4º -> El nombre del alias o la dirección ip: Si has usuado la opción -dir recibirá una ip$
+        print " "
+        print "-Ejemplo de sintaxis: "
+        print "    Añadir: python script.py -a -dir smtp 172.22.200.200"
+        print "    Eliminar:  python script.py -b smtp"
+        print " "
+        exit()
 
 print "Cambios realizados satisfactoriamente"
 os.system('systemctl restart bind9')
