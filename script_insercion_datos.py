@@ -23,6 +23,9 @@ else:
 	print "2º -> -dir o -alias, si recibe -dir va a crear un registro tipo A, si recibe -alias va a crear un registro CNAME"
 	print "3º -> El nombre de la máquina para añadir o borrar"
 	print "4º -> El nombre del alias o la dirección ip: Si has usuado la opción -dir recibirá una ip y si has usuado -alias recibirá el nombre de la máquina a la que le vamos a hacer el alias. Si has utilizado -b no teendrá este parámetro"
-	print ~*10"Ejemplo de sistaxis"
+	print ("~","10")"Ejemplo de sistaxis"("~","10")
+	print "- Añadir: python script.py -a -dir smtp 172.22.200.200"
+	print "- Eliminar:  python script.py -b smtp"
+
 print "Cambios realizados satisfactoriamente"
 os.system('systemctl restart bind9')
