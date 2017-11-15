@@ -2,7 +2,6 @@
 import sys,os
 opcion1=sys.argv[1]
 tipo=sys.argv[2]
-
 if opcion1 == '-a':
 	listad = open('/var/cache/bind/db.lopez.gonzalonazareno.org', 'a')
 	listai = open('/var/cache/bind/db.172.22.200', 'a')
