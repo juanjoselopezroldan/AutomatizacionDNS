@@ -1,4 +1,6 @@
 # AutomatizacionDNS
+script.py:
+
 Script realizado en python que permite realizar la introducion de registros NS o CNAME en un DNS Bind9
 
 Los parametros que tendremos que indicarle al script es el siguiente:
